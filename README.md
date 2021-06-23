@@ -8,12 +8,17 @@
 - Scoop
 - Microsoft Store
 
-## WinGet
+### WinGet
 
 <https://github.com/microsoft/winget-cli>
 
 `winget isntall firefox`
 
-## Scoop
+### Scoop
 
 <https://scoop.sh/>
+
+## Update any installation
+
+- <https://community.chocolatey.org/packages/ChocolateyGUI>
+- <https://patchmypc.com/home-updater>
