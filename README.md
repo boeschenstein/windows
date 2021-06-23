@@ -12,7 +12,7 @@
 
 <https://github.com/microsoft/winget-cli>
 
-`winget isntall firefox`
+`winget install firefox`
 
 ### Scoop
 
