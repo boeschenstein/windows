@@ -22,3 +22,9 @@
 
 - <https://community.chocolatey.org/packages/ChocolateyGUI>
 - <https://patchmypc.com/home-updater>
+
+## Active Directory
+
+### List my AD Roles
+
+`gpresult /V`
