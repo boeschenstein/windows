@@ -66,3 +66,7 @@ Upgrade all tools to latest verion:
 ```
 winget upgrade --force
 ```
+
+## File Search Tool `everything`
+
+Install `everything` in your Windows machine: Best search tool ever: <https://www.voidtools.com/>
