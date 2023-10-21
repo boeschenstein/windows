@@ -35,14 +35,14 @@
 
 Recommended tools:
 
-```
+```cmd
 winget install -e --accept-package-agreements --silent --id=OpenJS.NodeJS
 winget install -e --accept-package-agreements --silent --id=Microsoft.VisualStudioCode
 winget install -e --accept-package-agreements --silent --id Microsoft.SQLServerManagementStudio
 winget install -e --accept-package-agreements --silent --id DominikReichl.KeePass
 winget install -e --accept-package-agreements --silent --id Git.Git --source winget
 winget install -e --accept-package-agreements --silent --id Docker.DockerDesktop
-winget install -e --accept-package-agreements --silent --id Postman.Postman
+REM winget install -e --accept-package-agreements --silent --id Postman.Postman
 
 winget install -e --accept-package-agreements --silent --id=Microsoft.VisualStudio.2022.Enterprise
 --> Exitcode 1 (why?)
@@ -50,21 +50,48 @@ winget install -e --accept-package-agreements --silent --id=Microsoft.VisualStud
 
 Optional tools:
 
-```
-winget install -e --accept-package-agreements --silent --id Microsoft.WindowsTerminal
-winget install -e --accept-package-agreements --silent --id Atlassian.Sourcetree
-winget install -e --accept-package-agreements --silent --id GitExtensionsTeam.GitExtensions
-winget install -e --accept-package-agreements --silent --id=Notepad++.Notepad++
-winget install -e --accept-package-agreements --silent --id=Ghisler.TotalCommander
-winget install -e --accept-package-agreements --silent --id=Google.Chrome
-winget install -e --accept-package-agreements --silent --id Mozilla.Firefox
-winget install -e --accept-package-agreements --silent --id SumatraPDF.SumatraPDF
+```cmd
+winget install -e --accept-package-agreements --silent --include-unknown --id Microsoft.WindowsTerminal
+winget install -e --accept-package-agreements --silent --include-unknown --id Atlassian.Sourcetree
+winget install -e --accept-package-agreements --silent --include-unknown --id GitExtensionsTeam.GitExtensions
+winget install -e --accept-package-agreements --silent --include-unknown --id=Notepad++.Notepad++
+winget install -e --accept-package-agreements --silent --include-unknown --id=Ghisler.TotalCommander
+winget install -e --accept-package-agreements --silent --include-unknown --id=Google.Chrome
+winget install -e --accept-package-agreements --silent --include-unknown --id Mozilla.Firefox
+winget install -e --accept-package-agreements --silent --include-unknown --id SumatraPDF.SumatraPDF
 ```
 
 Upgrade all tools to latest verion:
 
+`--include-unknown: upgrade, if version is not in list`
+
+```cmd
+winget upgrade -all --force --silent --include-unknown
 ```
-winget upgrade --force
+
+Search
+
+```cmd
+winget search <appname>
+```
+
+Export/Import
+
+```cmd
+winget export -o .\WinGetExport.json
+winget import -i .\WinGetExport.json
+```
+
+Show folders
+
+```cmd
+winget --info
+```
+
+Edit Settings
+
+```cmd
+winget settings
 ```
 
 ## File Search Tool `everything`
