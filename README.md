@@ -97,3 +97,12 @@ winget settings
 ## File Search Tool `everything`
 
 Install `everything` in your Windows machine: Best search tool ever: <https://www.voidtools.com/>
+
+# Android
+
+## scrcpy
+
+Share android phone screen on windows PC: scrcpy
+
+- https://www.makeuseof.com/tag/mirror-android-screen-pc-mac-without-root/
+- https://github.com/Genymobile/scrcpy/blob/master/README.md
