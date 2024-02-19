@@ -106,3 +106,8 @@ Share android phone screen on windows PC: scrcpy
 
 - https://www.makeuseof.com/tag/mirror-android-screen-pc-mac-without-root/
 - https://github.com/Genymobile/scrcpy/blob/master/README.md
+
+## Microsoft PC Manager
+
+<https://apps.microsoft.com/detail/9PM860492SZD?hl=de-de&gl=US>
+
