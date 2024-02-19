@@ -109,5 +109,5 @@ Share android phone screen on windows PC: scrcpy
 
 ## Microsoft PC Manager
 
-<https://apps.microsoft.com/detail/9PM860492SZD?hl=de-de&gl=US>
-
+- <https://apps.microsoft.com/detail/9PM860492SZD?hl=de-de&gl=US>
+- <https://pcmanager.microsoft.com/en-us>
