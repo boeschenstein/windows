@@ -29,9 +29,21 @@
 
 `gpresult /V`
 
-## Tools Installation
+## Winget
 
 >Check your 'winget' installation in cmd: If winget is not available in cmd, install "App-Installer" in your Microsoft Store App.
+
+- Winget cheat sheet: <https://difyel.com/cheatsheet/winget-cheat-sheet/>
+
+### Enable winget policies
+
+``` cmd
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableAppInstaller /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableDefaultSource /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableSettings /t REG_DWORD /d "1" /f
+```
+
+### Tools Installation
 
 Recommended tools:
 
