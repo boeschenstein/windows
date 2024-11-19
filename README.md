@@ -38,8 +38,15 @@
 ### Enable winget policies
 
 ``` cmd
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableAdditionalSources /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableAllowedSources /t REG_DWORD /d "1" /f
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableAppInstaller /t REG_DWORD /d "1" /f
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableDefaultSource /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableExperimentalFeatures /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableHashOverride /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableLocalManifestFiles /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableMicrosoftStoreSource /t REG_DWORD /d "1" /f
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableMSAppInstallerProtocol /t REG_DWORD /d "1" /f
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppInstaller /v EnableSettings /t REG_DWORD /d "1" /f
 ```
 
@@ -71,6 +78,10 @@ winget install -e --accept-package-agreements --silent --include-unknown --id=Gh
 winget install -e --accept-package-agreements --silent --include-unknown --id=Google.Chrome
 winget install -e --accept-package-agreements --silent --include-unknown --id Mozilla.Firefox
 winget install -e --accept-package-agreements --silent --include-unknown --id SumatraPDF.SumatraPDF
+
+winget source reset
+winget --info
+winget source list 
 ```
 
 Upgrade all tools to latest verion:
