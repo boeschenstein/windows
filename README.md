@@ -130,6 +130,13 @@ Share android phone screen on windows PC: scrcpy
 - https://www.makeuseof.com/tag/mirror-android-screen-pc-mac-without-root/
 - https://github.com/Genymobile/scrcpy/blob/master/README.md
 
+Howto
+
+- enable develper mode (click several time on android build number in settings, software information)
+- close settings, open settings. new menu appears: developer options
+  - enable USB-Debugging
+- run `scrcpy-console.bat`
+
 # Tools
 
 ## Microsoft PC Manager
